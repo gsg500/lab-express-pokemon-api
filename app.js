@@ -7,7 +7,7 @@ const app = express();
 
 // -- Define your route listeners here! --
 app.use(express.json());
-app.use("/regras", regras);
+app.use("/pokemon", regras);
 app.use("/search", search);
 app.listen(PORT, () => { console.log(`Server rodando na porta ${PORT}`); });
 

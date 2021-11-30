@@ -6,7 +6,7 @@ let PokemonDelet;
 const regras = app.get("/", (req, res) => { res.status(200).json(OsPokemons);});
 
 //--
-app.get("/pokemon/:id", (req, res) => {
+app.get("/:id", (req, res) => {
   const indexToSubstitute = OsPokemons.findIndex((currentPost) => {
     console.log(currentPost.id == req.params.id)
     return currentPost.id == req.params.id;
